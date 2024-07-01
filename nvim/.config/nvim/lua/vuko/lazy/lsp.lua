@@ -118,12 +118,14 @@ return {
 				"lua_ls",
 				"delve",
 				"isort",
-				"black",
+				"mypy",
+				"ruff",
+				"pyright",
 				"prettier",
 				"pylint",
 				"eslint_d",
-				"graphql-language-service-cli", -- Added for GraphQL
-				"emmet-ls", -- Added for Emmet
+				"graphql-language-service-cli",
+				"emmet-ls",
 			}
 
 			vim.list_extend(ensure_installed, servers_to_install)
