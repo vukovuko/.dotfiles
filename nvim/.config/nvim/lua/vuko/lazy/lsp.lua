@@ -44,7 +44,6 @@ return {
 				},
 				lua_ls = true,
 				rust_analyzer = true,
-				svelte = true,
 				templ = true,
 				cssls = true,
 				tsserver = true,
@@ -86,7 +85,7 @@ return {
 				},
 				graphql = {
 					capabilities = capabilities,
-					filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+					filetypes = { "graphql", "gql", "typescriptreact", "javascriptreact" },
 				},
 				emmet_ls = {
 					capabilities = capabilities,
@@ -98,7 +97,6 @@ return {
 						"sass",
 						"scss",
 						"less",
-						"svelte",
 					},
 				},
 			}
@@ -176,7 +174,6 @@ return {
 					typescript = { "prettier" },
 					javascriptreact = { "prettier" },
 					typescriptreact = { "prettier" },
-					svelte = { "prettier" },
 					css = { "prettier" },
 					html = { "prettier" },
 					json = { "prettier" },
