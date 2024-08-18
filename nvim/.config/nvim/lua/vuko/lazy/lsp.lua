@@ -110,7 +110,15 @@ return {
 				end
 			end, vim.tbl_keys(servers))
 
-			require("mason").setup()
+			require("mason").setup({
+				ui = {
+					icons = {
+						package_pending = " ",
+						package_installed = " ",
+						package_uninstalled = " ",
+					},
+				},
+			})
 			local ensure_installed = {
 				"stylua",
 				"lua_ls",
@@ -186,6 +194,7 @@ return {
 					c = { "clang-format" },
 					cpp = { "clang-format " },
 				},
+
 				format_on_save = {
 					lsp_fallback = true,
 					async = false,
